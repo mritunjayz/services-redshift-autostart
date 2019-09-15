@@ -1,0 +1,15 @@
+[Unit]
+Description= auto redshift on
+
+[Service]
+ExecStart=/usr/bin/env node /var/www/autoRedshift/redshift.js
+Restart=always
+RestartSec=5
+StartLimitInterval=200
+StartLimitBurst=5
+User=root
+Environment='XAUTHORITY=/run/user/1000/gdm/Xauthority' 'DISPLAY=:2'
+
+
+[Install]
+WantedBy=multi-user.target
