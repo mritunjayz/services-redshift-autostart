@@ -2,7 +2,7 @@ var sys = require("sys");
 var exec = require("child_process").exec;
 
 exec(
-  "sudo mkdir /var/www/autoRedshift && sudo cp redshift.js /var/www/autoRedshift/",
+  "sudo mkdir /var/www/autoRedshift && sudo cp redshift.js /var/www/autoRedshift/ && sudo cp autoRedshift.service /etc/systemd/system/",
   function(error, stdout, stderr) {
     console.log("Executed");
 
