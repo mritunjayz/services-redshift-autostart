@@ -7,15 +7,7 @@
 #### \* steps to try
 
 ```
- 1. mkdir /var/www/autoRedshif
-
- 2.  touch  /var/www/autoRedshif/redshift.js
-
- // copy redshit.js file to /var/www/autoRedshif/redshift.js
-
- 3. touch /etc/systemd/system/autoRedshift.service
-
- // copy autoRedshift.service file to /etc/systemd/system/autoRedshift.service
+ 1. node index.js
 
 ```
 
